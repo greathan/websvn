@@ -1,0 +1,25 @@
+doctype 5
+html
+	head
+		title=svn
+		link(type="text/css", rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+		link(type="text/css", rel="stylesheet", href="/public/css/index.css")
+	body
+		div(class="navbar navbar-fixed-top navbar-inverse")
+			div(class="container")
+		div(class="container")
+			div(class="row")
+				div(class="col-lg-8")
+					div(class="input-group")
+						span(class="input-group-addon") Repo
+						input#repo(type="text", class="form-control input-sm", placeholder="repo path")
+					div#content(style="display:none")
+				div(class="col-lg-4")
+					div.btn-group
+						button#history(class="btn btn-primary btn-sm",data-loading-text="Loading...") History
+						button#merge(class="btn btn-primary btn-sm") Merge
+						button#tmg(class="btn btn-primary btn-sm") Test Merge
+
+				script(type="text/javascript", src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+				script(type="text/javascript", src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+				script(type="text/javascript", src="/public/js/index.js")
