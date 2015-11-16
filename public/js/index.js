@@ -100,7 +100,7 @@
 			item.name && res.push('<td><a href="#">', item.name ,'</a></td>');
 			res.push('<td><a href="##">', item.author, '</a></td></li>');
 			item.msg && res.push('<td>', item.msg, '</td>');
-			var o = parseDate(item.date);
+			var o = new Date(item.date);
 			res.push('<td class="text-muted text-right"><small>', getDateStr(o) ,'</small></td>');
 			res.push('</tr>');
 		});
